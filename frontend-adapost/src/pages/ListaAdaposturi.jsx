@@ -13,7 +13,7 @@ export default function ShelterList() {
     const fetchAdaposturi = async () => {
       try {
         setIncarcare(true);
-        const response = await fetch("${import.meta.env.VITE_API_URL}/api/adaposturi");
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/adaposturi`);
         if (!response.ok) {
           throw new Error("Eroare la conexiunea cu serverul");
         }
