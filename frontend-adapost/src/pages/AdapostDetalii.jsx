@@ -74,13 +74,19 @@ export default function AdapostDetalii() {
           resVenituri,
           resSpecie,
         ] = await Promise.all([
-          fetch(`http://localhost:3000/api/adaposturi/${id}`),
-          fetch(`http://localhost:3000/api/adaposturi/${id}/animale`),
-          fetch(`http://localhost:3000/api/adaposturi/${id}/angajati`),
-          fetch(`http://localhost:3000/api/adaposturi/${id}/statistics`),
-          fetch(`http://localhost:3000/api/adaposturi/${id}/payments`),
-          fetch(`http://localhost:3000/api/adaposturi/${id}/income`),
-          fetch(`http://localhost:3000/api/specii`),
+          fetch(`${import.meta.env.VITE_API_URL}/api/adaposturi/${id}`),
+          fetch(`${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/animale`),
+          fetch(
+            `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/angajati`,
+          ),
+          fetch(
+            `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/statistics`,
+          ),
+          fetch(
+            `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/payments`,
+          ),
+          fetch(`${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/income`),
+          fetch(`${import.meta.env.VITE_API_URL}/api/specii`),
         ]);
 
         if (!resAdapost.ok || !resAnimale.ok) {

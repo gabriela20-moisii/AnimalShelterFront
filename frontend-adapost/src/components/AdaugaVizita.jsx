@@ -6,7 +6,7 @@ export default function AdaugaVizita() {
   const schemaVizita = {
     titlu: "Adauga Vizita",
     method: "POST",
-    endpoint: `http://localhost:3000/api/adaposturi/${idAdapost}/angajati/${idAngajat}`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/angajati/${idAngajat}`,
     campuri: [
       {
         nume: "orasVizitat",

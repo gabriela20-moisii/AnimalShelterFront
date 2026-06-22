@@ -6,7 +6,7 @@ export default function AdaugaAnimal() {
   const schemaAnimal = {
     titlu: "Adauga Animal",
     method: "POST",
-    endpoint: `http://localhost:3000/api/adaposturi/${id}/animale`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/animale`,
     campuri: [
       {
         nume: "nume",

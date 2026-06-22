@@ -46,7 +46,7 @@ export default function AnimalDetalii() {
     const fetchAnimal = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/adaposturi/${idAdapost}/animale/${idAnimal}`,
+          `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/animale/${idAnimal}`,
         );
         if (!response.ok) {
           throw new Error("Err la obtinerea datelor animal");

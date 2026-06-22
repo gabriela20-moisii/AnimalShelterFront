@@ -5,7 +5,7 @@ export default function AdaugaTransfer() {
   const { idAdapost, idAnimal } = useParams();
   const schemaTransfer = {
     titlu: "Aduga Transfer",
-    endpoint: `http://localhost:3000/api/adaposturi/${idAdapost}/animale/${idAnimal}/transfer`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/animale/${idAnimal}/transfer`,
     method: "POST",
     campuri: [
       {

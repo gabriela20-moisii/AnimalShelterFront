@@ -7,7 +7,7 @@ export default function AdaugaPlata() {
   const schemaPlata = {
     titlu: "Adauga Plata",
     method: "POST",
-    endpoint: `http://localhost:3000/api/adaposturi/${id}/payments`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/payments`,
     campuri: [
       {
         nume: "descriere",

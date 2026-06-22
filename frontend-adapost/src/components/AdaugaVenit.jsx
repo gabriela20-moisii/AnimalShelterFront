@@ -7,7 +7,7 @@ export default function AdaugaVenit() {
   const schemaVenit = {
     titlu: "Adauga Venit",
     method: "POST",
-    endpoint: `http://localhost:3000/api/adaposturi/${id}/income`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/income`,
     campuri: [
       {
         nume: "descriere",

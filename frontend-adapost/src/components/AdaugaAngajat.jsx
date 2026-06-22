@@ -6,7 +6,7 @@ export default function AdaugaAngajat() {
   const schemaAngajat = {
     titlu: "Adauga Angajat",
     method: "POST",
-    endpoint: `http://localhost:3000/api/adaposturi/${id}/angajati`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${id}/angajati`,
     campuri: [
       {
         nume: "numeAngajat",

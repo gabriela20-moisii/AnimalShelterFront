@@ -25,7 +25,7 @@ export default function AngajatDetalii() {
       try {
         setIncarcare(true);
         const response = await fetch(
-          `http://localhost:3000/api/adaposturi/${idAdapost}/angajati/${idAngajat}`,
+          `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/angajati/${idAngajat}`,
         );
 
         if (!response.ok) {

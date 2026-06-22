@@ -6,7 +6,7 @@ export default function AdaugaRetur() {
   const schemaRetur = {
     titlu: "Inroleaza Adoptie",
     method: "PUT",
-    endpoint: `http://localhost:3000/api/adaposturi/${idAdapost}/animale/${idAnimal}/returnare`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/animale/${idAnimal}/returnare`,
     campuri: [
       {
         nume: "motiv",

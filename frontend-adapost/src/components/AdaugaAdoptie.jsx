@@ -6,7 +6,7 @@ export default function AdaugaAdoptie() {
   const schemaAdoptie = {
     titlu: "Inroleaza Adoptie",
     method: "POST",
-    endpoint: `http://localhost:3000/api/adaposturi/${idAdapost}/animale/${idAnimal}/adoptie`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/animale/${idAnimal}/adoptie`,
     campuri: [
       {
         nume: "nume",

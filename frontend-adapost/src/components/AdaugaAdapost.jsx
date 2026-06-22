@@ -4,7 +4,7 @@ export default function AdaugaAdapost() {
   const schemaAdapost = {
     titlu: "Adaugă un Adăpost",
     method: "POST",
-    endpoint: "http://localhost:3000/api/adaposturi",
+    endpoint: "${import.meta.env.VITE_API_URL}/api/adaposturi",
     campuri: [
       {
         nume: "nume",

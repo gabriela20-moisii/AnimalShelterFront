@@ -6,7 +6,7 @@ export default function AdaugaInterventie() {
 
   const schemaInterventie = {
     titlu: "Adauga Interventie",
-    endpoint: `http://localhost:3000/api/adaposturi/${idAdapost}/animale/${idAnimal}/adauga-interventie`,
+    endpoint: `${import.meta.env.VITE_API_URL}/api/adaposturi/${idAdapost}/animale/${idAnimal}/adauga-interventie`,
     method: "POST",
     campuri: [
       {
