@@ -1,0 +1,23 @@
+[
+  {
+    "idAdapost": 1,
+    "numeAdapost": "Adăpostul Timișoara",
+    "adresa": "Strada Câinilor Fericiti nr. 10",
+    "numeOras": "Timișoara",
+    "numeTara": "România"
+  },
+  {
+    "idAdapost": 2,
+    "numeAdapost": "Capital Paws",
+    "adresa": "Bulevardul Pisicilor nr. 45",
+    "numeOras": "București",
+    "numeTara": "România"
+  },
+  {
+    "idAdapost": 3,
+    "numeAdapost": "Casa Neamțului",
+    "adresa": "Aleea Pădurii nr. 3",
+    "numeOras": "Piatra Neamț",
+    "numeTara": "România"
+  }
+]
